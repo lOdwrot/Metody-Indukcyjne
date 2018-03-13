@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Wst\IeC {\k e}p}{2}
+\contentsline {section}{\numberline {2}Implementacja klasyfikatora i problem wyg\IeC {\l }adzania}{2}
+\contentsline {section}{\numberline {3}Metody dyskretyzacji}{2}
+\contentsline {section}{\numberline {4}Wyb\IeC {\'o}r instancji}{5}
+\contentsline {section}{\numberline {5}Por\IeC {\'o}wnanie dzia\IeC {\l }ania algorytmu przy r\IeC {\'o}\IeC {\.z}nych podzia\IeC {\l }ach danych i sposobie liczenia prawdopodobie\IeC {\'n}stwa}{6}
+\contentsline {section}{\numberline {6}Por\IeC {\'o}wnanie dzia\IeC {\l }ania metod dyskretyzacji dla badanych zbior\IeC {\'o}w}{9}
+\contentsline {section}{\numberline {7}Wnioski}{12}
