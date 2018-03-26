@@ -84,60 +84,72 @@ def foldXarr(_featuresArray, _foldTargets, _parts):
     featueTab = []
     targetTab = []
 
-    partLen = int(len(_featuresArray) / _parts)
+    mFeatures = []
+    mTargets = []
+
+    mIndexes = list(range(0, len(_featuresArray)))
+    # random.shuffle(mIndexes)
+
+    for i in mIndexes:
+        mFeatures.append(_featuresArray[i])
+        mTargets.append(_foldTargets[i])
+
+    partLen = int(len(mFeatures) / _parts)
     for i in range(0, _parts - 1):
-        featueTab.append(_featuresArray[i*partLen : (i+1)*partLen])
-        targetTab.append(_foldTargets[i*partLen : (i+1)*partLen])
+        featueTab.append(mFeatures[i*partLen : (i+1)*partLen])
+        targetTab.append(mTargets[i*partLen : (i+1)*partLen])
+    featueTab.append(mFeatures[(_parts - 1) * partLen : ])
+    targetTab.append(mTargets[(_parts - 1) * partLen : ])
 
     return featueTab, targetTab
 
 
 
-# def crossValidation(_features, _targets, _classifierType, _discretizationTechnique, _groups):
-#     print('Cross validation lunched')
-#     allExamTargets = []
-#     allExamResults = []
+def crossValidation(_features, _targets, _classifierType, _discretizationTechnique, _groups):
+    allExamTargets = []
+    allExamResults = []
 
-#     # discretization
-#     if _discretizationTechnique == dEqualWitdh:
-#         _features = discretizationEqualWidth(_features, 10)
-#     elif _discretizationTechnique == dEqualFreq:
-#         _features = discretizationEqualFreq(_features)
-#     elif _discretizationTechnique == dQuantile:
-#         _features = discretizationQuantileTransform(_features)
+    # discretization
+    if _discretizationTechnique == dEqualWitdh:
+        _features = discretizationEqualWidth(_features, 10)
+    elif _discretizationTechnique == dEqualFreq:
+        _features = discretizationEqualFreq(_features)
+    elif _discretizationTechnique == dQuantile:
+        _features = discretizationQuantileTransform(_features)
 
-#     byTypes = getFeatureByTypes(_features, _targets, True)
-#     splitted = foldX(byTypes, _groups)
+    byTypes = getFeatureByTypes(_features, _targets, True)
+    splitted = foldX(byTypes, _groups)
     
 
-#     for examSubsetNumb in range(0, len(splitted[0])):
-#         learnSet = []
-#         learnTargets = []
-#         examSet = []
-#         examTargets = []
+    for examSubsetNumb in range(0, len(splitted[0])):
+        learnSet = []
+        learnTargets = []
+        examSet = []
+        examTargets = []
 
-#         for key in splitted:
-#             parts = splitted[key]
-#             for j in range(0, len(parts)):
-#                 if examSubsetNumb != j:
-#                     learnSet.extend(parts[j])
-#                     learnTargets.extend([key for i in range(0, len(parts[j]))])
-#                 else:
-#                     examSet.extend(parts[j])
-#                     examTargets.extend([key for i in range(0, len(parts[j]))])
-#         if _classifierType == 'normal':
-#             classifier = getClassifireNormal(learnSet, learnTargets)
-#         else:
-#             classifier = getClassifireSmooth(learnSet, learnTargets)
+        for key in splitted:
+            parts = splitted[key]
+            for j in range(0, len(parts)):
+                if examSubsetNumb != j:
+                    learnSet.extend(parts[j])
+                    learnTargets.extend([key for i in range(0, len(parts[j]))])
+                else:
+                    examSet.extend(parts[j])
+                    examTargets.extend([key for i in range(0, len(parts[j]))])
+        if _classifierType == 'normal':
+            classifier = getClassifireNormal(learnSet, learnTargets)
+        else:
+            classifier = getClassifireSmooth(learnSet, learnTargets)
 
-#         y_pred = classifier.predict(examSet)
-#         allExamTargets.extend(examTargets)
-#         allExamResults.extend(y_pred)
+        y_pred = classifier.predict(examSet)
+        allExamTargets.extend(examTargets)
+        allExamResults.extend(y_pred)
 
-#     return allExamTargets, allExamResults
+    print("Number of mislabeled points out of a total %d points : %d" % (len(allExamTargets),(np.array(allExamTargets) != np.array(allExamResults)).sum()))
+
+    return allExamTargets, allExamResults
 
 def crossValidationNS(_features, _targets, _classifierType, _discretizationTechnique, _groups):
-    print('Cross validation lunched')
     allExamTargets = []
     allExamResults = []
 
@@ -149,38 +161,34 @@ def crossValidationNS(_features, _targets, _classifierType, _discretizationTechn
     elif _discretizationTechnique == dQuantile:
         _features = discretizationQuantileTransform(_features)
  
-    splitted, splittedTarget = foldXarr(_features, _targets, _groups)
-    parts = splitted
+    parts, splittedTarget = foldXarr(_features, _targets, _groups)
     
-    
-
-    for examSubsetNumb in range(0, int(len(_features) / _groups) - 1):
+    for examSubsetNumb in range(0, int(len(parts))):
         learnSet = []
         learnTargets = []
         examSet = []
         examTargets = []
 
-        for j in range(0, len(parts) - 1):
+        for j in range(0, len(parts)):
             if examSubsetNumb != j:
                 learnSet.extend(parts[j])
                 learnTargets.extend(splittedTarget[j])
             else:
                 examSet.extend(parts[j])
                 examTargets.extend(splittedTarget[j])
-        if _classifierType == 'normal':
 
+        if _classifierType == 'normal':
             classifier = getClassifireNormal(learnSet, learnTargets)
         else:
             classifier = getClassifireSmooth(learnSet, learnTargets)
- 
-        print(examSet)
-        print(examTargets)
 
         if len(examSet) > 0:
             y_pred = classifier.predict(examSet)
 
             allExamTargets.extend(examTargets)
             allExamResults.extend(y_pred)
+
+    print("Number of mislabeled points out of a total %d points : %d" % (len(allExamTargets),(np.array(allExamTargets) != np.array(allExamResults)).sum()))
 
     return allExamTargets, allExamResults
 
@@ -271,14 +279,12 @@ def drawMergedStats(_paramNames, _barVals, _legendLabels=None, tiltle=None):
 
 def analise(_features, _targets, _classifireType, _setName, _featureNames, _discretizationTechnique, _pltNumb=None, _foldParts=10):
     # reults without discretization
-    print("Start analised " + _setName)
 
     y_true, y_pred = crossValidationNS(_features, _targets, _classifireType, _discretizationTechnique, _foldParts)
     drawConfusionMatrix(y_true, y_pred, classes=_featureNames, normalize="True", title=_discretizationTechnique, pltNumb=_pltNumb)
     accracy, precision, recall, fscore = countStatistics(y_true, y_pred)
     print("accracy: %f, precision: %f , recall: %f, fscore: %f" % (accracy, precision, recall, fscore))
     
-    print("End analised " + _setName)
     return [accracy, precision, recall, fscore]
 
 def discretizationComparation(_features, _targets, _classifireType, _setName, _featureNames):
@@ -294,11 +300,15 @@ def foldComparation(_features, _targets, _classifireType, _setName, _featureName
     mStats = []
     mLabels = ['Fold 2', 'Fold 3', 'Fold 5', 'Fold 10']
     mStats.append(analise(_features, _targets, _classifireType, _setName,_featureNames, mLabels[0], 1, 2))
-    # mStats.append(analise(_features, _targets, _classifireType, _setName,_featureNames, mLabels[1], 2, 3))
-    # mStats.append(analise(_features, _targets, _classifireType, _setName,_featureNames, mLabels[2], 3, 5))
-    # mStats.append(analise(_features, _targets, _classifireType, _setName,_featureNames, mLabels[3], 4, 10))
+    mStats.append(analise(_features, _targets, _classifireType, _setName,_featureNames, mLabels[1], 2, 3))
+    mStats.append(analise(_features, _targets, _classifireType, _setName,_featureNames, mLabels[2], 3, 5))
+    mStats.append(analise(_features, _targets, _classifireType, _setName,_featureNames, mLabels[3], 4, 10))
+    # mStats.append(analise(_features, _targets, _classifireType, _setName,_featureNames, mLabels[3], 4, 6))
+    # mStats.append(analise(_features, _targets, _classifireType, _setName,_featureNames, mLabels[3], 4, 7))
+    # mStats.append(analise(_features, _targets, _classifireType, _setName,_featureNames, mLabels[3], 4, 8))
+    # mStats.append(analise(_features, _targets, _classifireType, _setName,_featureNames, mLabels[3], 4, 9))
     
-    # drawMergedStats(['accuracy', 'precision', 'recall', 'fscore'], mStats, mLabels, _setName)
+    drawMergedStats(['accuracy', 'precision', 'recall', 'fscore'], mStats, mLabels, _setName)
 
 def debug(): 
     figIris = plt.figure()
@@ -312,10 +322,10 @@ def debug():
 
 
 #end 
-dataSetName = "Iris"
-dataSet = datasets.load_iris()
-# dataSetName = "Wine"
-# dataSet = datasets.load_wine()
+# dataSetName = "Iris"
+# dataSet = datasets.load_iris()
+dataSetName = "Wine"
+dataSet = datasets.load_wine()
 # dataSetName = "Diabetes"
 # dataSet = dataLoad.getDiabetesDataSet()
 

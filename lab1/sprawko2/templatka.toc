@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Wst\IeC {\k e}p}{2}{section.1}
+\contentsline {section}{\numberline {2}Badane zbiory}{2}{section.2}
+\contentsline {section}{\numberline {3}Implementacja klasyfikatora i problem wyg\IeC {\l }adzania}{3}{section.3}
+\contentsline {section}{\numberline {4}Metody dyskretyzacji}{4}{section.4}
+\contentsline {section}{\numberline {5}Badanie metod kroswalidacji}{7}{section.5}
+\contentsline {section}{\numberline {6}Por\IeC {\'o}wnanie dzia\IeC {\l }ania algorytm\IeC {\'o}w}{11}{section.6}
+\contentsline {section}{\numberline {7}Wnioski}{14}{section.7}
