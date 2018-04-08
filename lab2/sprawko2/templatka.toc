@@ -1,0 +1,4 @@
+\contentsline {section}{\numberline {1}Wst\IeC {\k e}p}{2}{section.1}
+\contentsline {section}{\numberline {2}Badane zbiory}{2}{section.2}
+\contentsline {section}{\numberline {3}Por\IeC {\'o}wnanie metod kroswalidacji}{3}{section.3}
+\contentsline {section}{\numberline {4}Badane parametry}{3}{section.4}
