@@ -38,3 +38,23 @@ barplot(vecMinCasesFscore, names.arg=vecMinCases, ylim = c(0,1))
 # 
 # mResult <- stratifiedCrossC50(mDataSet, mTreeParams)
 # print(mResult)
+# test crossvalidation
+
+testedFoldSizes <- c(2,3,4,5,6,7,8,9,10)
+mData <- getDataSetDiabetes()
+
+vecStratified <- vector(length = length(testedFoldSizes), mode = 'list')
+vecNormal <- vector(length = length(testedFoldSizes), mode = 'list')
+vecNormalRandomize <- vector(length = length(testedFoldSizes), mode = 'list')
+
+
+for(x in seq(length(testedFoldSizes))) {
+  vecStratified[x] <- stratifiedCrossC50(mData, C5.0Control(), testedFoldSizes[x])
+  vecNormal[x] <- normalCrossC50(mData, C5.0Control(), testedFoldSizes[x], FALSE)
+  vecNormalRandomize[x] <- normalCrossC50(mData, C5.0Control(), testedFoldSizes[x], TRUE)
+}
+
+dt <- data.table(testedFoldSizes, vecStratified, vecNormal, vecNormalRandomize)
+names(dt) <- c("Folds", "Stratified crossvalidation", "Normall crossvalidation", "Normall randomize crossvalidation")
+print(dt)
+

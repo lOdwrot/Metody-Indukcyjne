@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.11)  8 APR 2018 00:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.11)  9 APR 2018 22:20
 entering extended mode
 **./templatka.tex
 (templatka.tex
@@ -1023,123 +1023,356 @@ been already used, duplicate ignored
                    \relax 
 l.69 \newpage
               [1]
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 75.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 75.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 75.
-<dsWineCombined.png, id=34, 1387.584pt x 691.6239pt>
-File: dsWineCombined.png Graphic file (type png)
-<use dsWineCombined.png>
-Package pdftex.def Info: dsWineCombined.png  used on input line 93.
-(pdftex.def)             Requested size: 455.24411pt x 226.90688pt.
-<dsGlassCombined.png, id=36, 1387.584pt x 691.6239pt>
-File: dsGlassCombined.png Graphic file (type png)
-<use dsGlassCombined.png>
-Package pdftex.def Info: dsGlassCombined.png  used on input line 99.
-(pdftex.def)             Requested size: 455.24411pt x 226.90688pt.
- [2 <./dsWineCombined.png>]
-<dsDiabetesCombined.png, id=48, 1387.584pt x 691.6239pt>
-File: dsDiabetesCombined.png Graphic file (type png)
-<use dsDiabetesCombined.png>
-Package pdftex.def Info: dsDiabetesCombined.png  used on input line 105.
-(pdftex.def)             Requested size: 455.24411pt x 226.90688pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 112.
-
-
-("D:\Programy\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 74.
+ ("D:\Programy\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
+<dsWineCombined.png, id=64, 1387.584pt x 691.6239pt>
+File: dsWineCombined.png Graphic file (type png)
+<use dsWineCombined.png>
+Package pdftex.def Info: dsWineCombined.png  used on input line 86.
+(pdftex.def)             Requested size: 455.24411pt x 226.90688pt.
+<dsGlassCombined.png, id=66, 1387.584pt x 691.6239pt>
+File: dsGlassCombined.png Graphic file (type png)
+<use dsGlassCombined.png>
+Package pdftex.def Info: dsGlassCombined.png  used on input line 92.
+(pdftex.def)             Requested size: 455.24411pt x 226.90688pt.
+ [2 <./dsWineCombined.png>]
+<dsDiabetesCombined.png, id=74, 1387.584pt x 691.6239pt>
+File: dsDiabetesCombined.png Graphic file (type png)
+<use dsDiabetesCombined.png>
+Package pdftex.def Info: dsDiabetesCombined.png  used on input line 98.
+(pdftex.def)             Requested size: 455.24411pt x 226.90688pt.
 LaTeX Font Info:    Font shape `OMS/cmr/m/sl' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 112.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <12> on input line 111.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <8> on input line 111.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <6> on input line 111.
  [3 <./dsGlassCombined.png> <./dsDiabetesCombined.png>]
-<wineMinCase5.png, id=58, 701.62125pt x 424.58624pt>
+<wineMinCase5.png, id=83, 701.62125pt x 424.58624pt>
 File: wineMinCase5.png Graphic file (type png)
 <use wineMinCase5.png>
-Package pdftex.def Info: wineMinCase5.png  used on input line 129.
+Package pdftex.def Info: wineMinCase5.png  used on input line 167.
 (pdftex.def)             Requested size: 455.24411pt x 275.49837pt.
-<wineMinCase10.png, id=59, 701.62125pt x 424.58624pt>
+
+[4]
+<wineMinCase10.png, id=88, 701.62125pt x 424.58624pt>
 File: wineMinCase10.png Graphic file (type png)
 <use wineMinCase10.png>
-Package pdftex.def Info: wineMinCase10.png  used on input line 135.
+Package pdftex.def Info: wineMinCase10.png  used on input line 173.
 (pdftex.def)             Requested size: 455.24411pt x 275.49837pt.
-<wineMinCase20.png, id=60, 701.62125pt x 424.58624pt>
+<wineMinCase20.png, id=89, 701.62125pt x 424.58624pt>
 File: wineMinCase20.png Graphic file (type png)
 <use wineMinCase20.png>
-Package pdftex.def Info: wineMinCase20.png  used on input line 141.
+Package pdftex.def Info: wineMinCase20.png  used on input line 179.
 (pdftex.def)             Requested size: 455.24411pt x 275.49837pt.
- [4 <./wineMinCase5.png> <./wineMinCase10.png>]
-<glassCF_0.png, id=69, 1191.7022pt x 606.76688pt>
+ [5 <./wineMinCase5.png> <./wineMinCase10.png>]
+<glassCF_0.png, id=98, 1191.7022pt x 606.76688pt>
 File: glassCF_0.png Graphic file (type png)
 <use glassCF_0.png>
-Package pdftex.def Info: glassCF_0.png  used on input line 149.
+Package pdftex.def Info: glassCF_0.png  used on input line 187.
 (pdftex.def)             Requested size: 455.24411pt x 231.78667pt.
-<glassCF_0_1.png, id=70, 1191.7022pt x 606.76688pt>
+<glassCF_0_1.png, id=99, 1191.7022pt x 606.76688pt>
 File: glassCF_0_1.png Graphic file (type png)
 <use glassCF_0_1.png>
-Package pdftex.def Info: glassCF_0_1.png  used on input line 155.
+Package pdftex.def Info: glassCF_0_1.png  used on input line 193.
 (pdftex.def)             Requested size: 455.24411pt x 231.78667pt.
-
-[5 <./wineMinCase20.png> <./glassCF_0.png>]
-<glassCF_1.png, id=79, 1191.7022pt x 606.76688pt>
+ [6 <./wineMinCase20.png> <./glassCF_0.png>]
+<glassCF_1.png, id=109, 1191.7022pt x 606.76688pt>
 File: glassCF_1.png Graphic file (type png)
 <use glassCF_1.png>
-Package pdftex.def Info: glassCF_1.png  used on input line 161.
+Package pdftex.def Info: glassCF_1.png  used on input line 199.
 (pdftex.def)             Requested size: 455.24411pt x 231.78667pt.
-<no_GP_Glass.png, id=80, 1061.46562pt x 606.76688pt>
+<no_GP_Glass.png, id=110, 1061.46562pt x 606.76688pt>
 File: no_GP_Glass.png Graphic file (type png)
 <use no_GP_Glass.png>
-Package pdftex.def Info: no_GP_Glass.png  used on input line 169.
+Package pdftex.def Info: no_GP_Glass.png  used on input line 207.
 (pdftex.def)             Requested size: 455.24411pt x 260.22879pt.
- [6 <./glassCF_0_1.png> <./glassCF_1.png>]
-<GP_Glass.png, id=90, 992.20688pt x 606.76688pt>
+ [7 <./glassCF_0_1.png> <./glassCF_1.png>]
+<GP_Glass.png, id=119, 992.20688pt x 606.76688pt>
 File: GP_Glass.png Graphic file (type png)
 <use GP_Glass.png>
-Package pdftex.def Info: GP_Glass.png  used on input line 175.
+Package pdftex.def Info: GP_Glass.png  used on input line 213.
 (pdftex.def)             Requested size: 455.24411pt x 278.39398pt.
- [7 <./no_GP_Glass.png> <./GP_Glass.png>]
-<glassWinnow_FALSE.png, id=99, 1020.06094pt x 606.76688pt>
+ [8 <./no_GP_Glass.png> <./GP_Glass.png>]
+<glassWinnow_FALSE.png, id=128, 1020.06094pt x 606.76688pt>
 File: glassWinnow_FALSE.png Graphic file (type png)
 <use glassWinnow_FALSE.png>
-Package pdftex.def Info: glassWinnow_FALSE.png  used on input line 183.
+Package pdftex.def Info: glassWinnow_FALSE.png  used on input line 221.
 (pdftex.def)             Requested size: 455.24411pt x 270.79276pt.
-<glassWinnow_TRUE.png, id=100, 1020.06094pt x 606.76688pt>
+<glassWinnow_TRUE.png, id=129, 1020.06094pt x 606.76688pt>
 File: glassWinnow_TRUE.png Graphic file (type png)
 <use glassWinnow_TRUE.png>
-Package pdftex.def Info: glassWinnow_TRUE.png  used on input line 189.
+Package pdftex.def Info: glassWinnow_TRUE.png  used on input line 227.
 (pdftex.def)             Requested size: 455.24411pt x 270.79276pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
- [8 <./glassWinnow_FALSE.png> <./glassWinnow_TRUE.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
+<wineDTCF.PNG, id=130, 180.675pt x 168.63pt>
+File: wineDTCF.PNG Graphic file (type png)
+<use wineDTCF.PNG>
+Package pdftex.def Info: wineDTCF.PNG  used on input line 235.
+(pdftex.def)             Requested size: 180.67455pt x 168.62958pt.
+ [9 <./glassWinnow_FALSE.png> <./glassWinnow_TRUE.png>]
+<wineDTminCases.png, id=139, 222.8325pt x 140.02313pt>
+File: wineDTminCases.png Graphic file (type png)
+<use wineDTminCases.png>
+Package pdftex.def Info: wineDTminCases.png  used on input line 240.
+(pdftex.def)             Requested size: 222.83195pt x 140.02278pt.
+<wineDTnoGlobalPruning.PNG, id=140, 335.75438pt x 57.96657pt>
+File: wineDTnoGlobalPruning.PNG Graphic file (type png)
+<use wineDTnoGlobalPruning.PNG>
+Package pdftex.def Info: wineDTnoGlobalPruning.PNG  used on input line 245.
+(pdftex.def)             Requested size: 335.75356pt x 57.96642pt.
+<WineDTwinnow.PNG, id=141, 184.43906pt x 57.21375pt>
+File: WineDTwinnow.PNG Graphic file (type png)
+<use WineDTwinnow.PNG>
+Package pdftex.def Info: WineDTwinnow.PNG  used on input line 250.
+(pdftex.def)             Requested size: 184.4386pt x 57.2136pt.
+<WineFScoreCF.jpg, id=142, 481.8pt x 481.8pt>
+File: WineFScoreCF.jpg Graphic file (type jpg)
+<use WineFScoreCF.jpg>
+Package pdftex.def Info: WineFScoreCF.jpg  used on input line 255.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+
+[10 <./wineDTCF.PNG> <./wineDTminCases.png> <./wineDTnoGlobalPruning.PNG> <./Wi
+neDTwinnow.PNG>]
+<WineSizeCF.jpg, id=155, 481.8pt x 481.8pt>
+File: WineSizeCF.jpg Graphic file (type jpg)
+<use WineSizeCF.jpg>
+Package pdftex.def Info: WineSizeCF.jpg  used on input line 260.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+<WineFScoreMinCases.jpg, id=156, 481.8pt x 481.8pt>
+File: WineFScoreMinCases.jpg Graphic file (type jpg)
+<use WineFScoreMinCases.jpg>
+Package pdftex.def Info: WineFScoreMinCases.jpg  used on input line 265.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+ [11 <./WineFScoreCF.jpg> <./WineSizeCF.jpg>]
+<WineSizeMinCases.jpg, id=163, 481.8pt x 481.8pt>
+File: WineSizeMinCases.jpg Graphic file (type jpg)
+<use WineSizeMinCases.jpg>
+Package pdftex.def Info: WineSizeMinCases.jpg  used on input line 270.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+<WineFScoreNoGlobalPruning.jpg, id=164, 481.8pt x 481.8pt>
+File: WineFScoreNoGlobalPruning.jpg Graphic file (type jpg)
+<use WineFScoreNoGlobalPruning.jpg>
+Package pdftex.def Info: WineFScoreNoGlobalPruning.jpg  used on input line 275.
+
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+ [12 <./WineFScoreMinCases.jpg> <./WineSizeMinCases.jpg>]
+<WineSizeNoGlobalPruning.jpg, id=172, 481.8pt x 481.8pt>
+File: WineSizeNoGlobalPruning.jpg Graphic file (type jpg)
+<use WineSizeNoGlobalPruning.jpg>
+Package pdftex.def Info: WineSizeNoGlobalPruning.jpg  used on input line 280.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+<WineFScoreWinnow.jpg, id=173, 481.8pt x 481.8pt>
+File: WineFScoreWinnow.jpg Graphic file (type jpg)
+<use WineFScoreWinnow.jpg>
+Package pdftex.def Info: WineFScoreWinnow.jpg  used on input line 285.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+ [13 <./WineFScoreNoGlobalPruning.jpg> <./WineSizeNoGlobalPruning.jpg>]
+<WineSizeWinnow.jpg, id=180, 481.8pt x 481.8pt>
+File: WineSizeWinnow.jpg Graphic file (type jpg)
+<use WineSizeWinnow.jpg>
+Package pdftex.def Info: WineSizeWinnow.jpg  used on input line 290.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+<glassDTCF.PNG, id=181, 359.84438pt x 170.13562pt>
+File: glassDTCF.PNG Graphic file (type png)
+<use glassDTCF.PNG>
+Package pdftex.def Info: glassDTCF.PNG  used on input line 297.
+(pdftex.def)             Requested size: 359.84349pt x 170.1352pt.
+ [14 <./WineFScoreWinnow.jpg> <./WineSizeWinnow.jpg>]
+<glassDTminCases.png, id=188, 347.79938pt x 142.28156pt>
+File: glassDTminCases.png Graphic file (type png)
+<use glassDTminCases.png>
+Package pdftex.def Info: glassDTminCases.png  used on input line 302.
+(pdftex.def)             Requested size: 347.79852pt x 142.2812pt.
+<glassDTnoGlobalPruning.PNG, id=189, 376.40625pt x 56.46094pt>
+File: glassDTnoGlobalPruning.PNG Graphic file (type png)
+<use glassDTnoGlobalPruning.PNG>
+Package pdftex.def Info: glassDTnoGlobalPruning.PNG  used on input line 307.
+(pdftex.def)             Requested size: 376.40532pt x 56.46078pt.
+<glassDTwinnow.PNG, id=190, 353.06906pt x 60.225pt>
+File: glassDTwinnow.PNG Graphic file (type png)
+<use glassDTwinnow.PNG>
+Package pdftex.def Info: glassDTwinnow.PNG  used on input line 312.
+(pdftex.def)             Requested size: 353.06819pt x 60.22484pt.
+<glassFScoreCF.jpg, id=191, 481.8pt x 481.8pt>
+File: glassFScoreCF.jpg Graphic file (type jpg)
+<use glassFScoreCF.jpg>
+Package pdftex.def Info: glassFScoreCF.jpg  used on input line 317.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+ [15 <./glassDTCF.PNG> <./glassDTminCases.png> <./glassDTnoGlobalPruning.PNG> <
+./glassDTwinnow.PNG>]
+<glassSizeCF.jpg, id=204, 481.8pt x 481.8pt>
+File: glassSizeCF.jpg Graphic file (type jpg)
+<use glassSizeCF.jpg>
+Package pdftex.def Info: glassSizeCF.jpg  used on input line 322.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+<glassFScoreMinCases.jpg, id=205, 481.8pt x 481.8pt>
+File: glassFScoreMinCases.jpg Graphic file (type jpg)
+<use glassFScoreMinCases.jpg>
+Package pdftex.def Info: glassFScoreMinCases.jpg  used on input line 327.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+ [16 <./glassFScoreCF.jpg> <./glassSizeCF.jpg>]
+<glassSizeMinCases.jpg, id=212, 481.8pt x 481.8pt>
+File: glassSizeMinCases.jpg Graphic file (type jpg)
+<use glassSizeMinCases.jpg>
+Package pdftex.def Info: glassSizeMinCases.jpg  used on input line 332.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+<glassFScoreNoGlobalPruning.jpg, id=213, 481.8pt x 481.8pt>
+File: glassFScoreNoGlobalPruning.jpg Graphic file (type jpg)
+<use glassFScoreNoGlobalPruning.jpg>
+Package pdftex.def Info: glassFScoreNoGlobalPruning.jpg  used on input line 337
+.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+
+[17 <./glassFScoreMinCases.jpg> <./glassSizeMinCases.jpg>]
+<glassSizeNoGlobalPruning.jpg, id=220, 481.8pt x 481.8pt>
+File: glassSizeNoGlobalPruning.jpg Graphic file (type jpg)
+<use glassSizeNoGlobalPruning.jpg>
+Package pdftex.def Info: glassSizeNoGlobalPruning.jpg  used on input line 342.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+<glassFScoreWinnow.jpg, id=221, 481.8pt x 481.8pt>
+File: glassFScoreWinnow.jpg Graphic file (type jpg)
+<use glassFScoreWinnow.jpg>
+Package pdftex.def Info: glassFScoreWinnow.jpg  used on input line 347.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+ [18 <./glassFScoreNoGlobalPruning.jpg> <./glassSizeNoGlobalPruning.jpg>]
+<glassSizeWinnow.jpg, id=229, 481.8pt x 481.8pt>
+File: glassSizeWinnow.jpg Graphic file (type jpg)
+<use glassSizeWinnow.jpg>
+Package pdftex.def Info: glassSizeWinnow.jpg  used on input line 352.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+<diabetesDFCF.PNG, id=230, 346.29375pt x 170.13562pt>
+File: diabetesDFCF.PNG Graphic file (type png)
+<use diabetesDFCF.PNG>
+Package pdftex.def Info: diabetesDFCF.PNG  used on input line 359.
+(pdftex.def)             Requested size: 346.2929pt x 170.1352pt.
+ [19 <./glassFScoreWinnow.jpg> <./glassSizeWinnow.jpg>]
+<diabetesDFminCases.png, id=237, 347.79938pt x 150.5625pt>
+File: diabetesDFminCases.png Graphic file (type png)
+<use diabetesDFminCases.png>
+Package pdftex.def Info: diabetesDFminCases.png  used on input line 364.
+(pdftex.def)             Requested size: 347.79852pt x 150.56212pt.
+<diabetesDFnoGlobalPruning.PNG, id=238, 368.1253pt x 60.225pt>
+File: diabetesDFnoGlobalPruning.PNG Graphic file (type png)
+<use diabetesDFnoGlobalPruning.PNG>
+Package pdftex.def Info: diabetesDFnoGlobalPruning.PNG  used on input line 369.
+
+(pdftex.def)             Requested size: 368.1244pt x 60.22484pt.
+<diabetesDFwinnow.PNG, id=239, 353.82187pt x 57.21375pt>
+File: diabetesDFwinnow.PNG Graphic file (type png)
+<use diabetesDFwinnow.PNG>
+Package pdftex.def Info: diabetesDFwinnow.PNG  used on input line 374.
+(pdftex.def)             Requested size: 353.821pt x 57.2136pt.
+<diabetesFScoreCF.jpg, id=240, 481.8pt x 481.8pt>
+File: diabetesFScoreCF.jpg Graphic file (type jpg)
+<use diabetesFScoreCF.jpg>
+Package pdftex.def Info: diabetesFScoreCF.jpg  used on input line 379.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+ [20 <./diabetesDFCF.PNG> <./diabetesDFminCases.png> <./diabetesDFnoGlobalPruni
+ng.PNG> <./diabetesDFwinnow.PNG>]
+<diabetesSizeCF.jpg, id=253, 481.8pt x 481.8pt>
+File: diabetesSizeCF.jpg Graphic file (type jpg)
+<use diabetesSizeCF.jpg>
+Package pdftex.def Info: diabetesSizeCF.jpg  used on input line 384.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+<diabetesFScoreMinCases.jpg, id=254, 481.8pt x 481.8pt>
+File: diabetesFScoreMinCases.jpg Graphic file (type jpg)
+<use diabetesFScoreMinCases.jpg>
+Package pdftex.def Info: diabetesFScoreMinCases.jpg  used on input line 389.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+ [21 <./diabetesFScoreCF.jpg> <./diabetesSizeCF.jpg>]
+<diabetesSizeMinCases.jpg, id=261, 481.8pt x 481.8pt>
+File: diabetesSizeMinCases.jpg Graphic file (type jpg)
+<use diabetesSizeMinCases.jpg>
+Package pdftex.def Info: diabetesSizeMinCases.jpg  used on input line 394.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+<diabetesFScoreNoGlobalPruning.jpg, id=262, 481.8pt x 481.8pt>
+File: diabetesFScoreNoGlobalPruning.jpg Graphic file (type jpg)
+<use diabetesFScoreNoGlobalPruning.jpg>
+Package pdftex.def Info: diabetesFScoreNoGlobalPruning.jpg  used on input line 
+399.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+ [22 <./diabetesFScoreMinCases.jpg> <./diabetesSizeMinCases.jpg>]
+<diabetesSizeNoGlobalPruning.jpg, id=269, 481.8pt x 481.8pt>
+File: diabetesSizeNoGlobalPruning.jpg Graphic file (type jpg)
+<use diabetesSizeNoGlobalPruning.jpg>
+Package pdftex.def Info: diabetesSizeNoGlobalPruning.jpg  used on input line 40
+4.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+<diabetesFScoreWinnow.jpg, id=270, 481.8pt x 481.8pt>
+File: diabetesFScoreWinnow.jpg Graphic file (type jpg)
+<use diabetesFScoreWinnow.jpg>
+Package pdftex.def Info: diabetesFScoreWinnow.jpg  used on input line 409.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+ [23 <./diabetesFScoreNoGlobalPruning.jpg> <./diabetesSizeNoGlobalPruning.jpg>]
+<diabetesSizeWinnow.jpg, id=277, 481.8pt x 481.8pt>
+File: diabetesSizeWinnow.jpg Graphic file (type jpg)
+<use diabetesSizeWinnow.jpg>
+Package pdftex.def Info: diabetesSizeWinnow.jpg  used on input line 414.
+(pdftex.def)             Requested size: 318.66948pt x 318.68002pt.
+ [24 <./diabetesFScoreWinnow.jpg> <./diabetesSizeWinnow.jpg>]
+Overfull \hbox (2.35474pt too wide) in paragraph at lines 425--425
+[]|\OT4/cmr/m/n/12 noGlobalPruning| 
+ []
+
+
+Overfull \hbox (9.46643pt too wide) in paragraph at lines 423--433
+[][]
+ []
+
+<wineOptimal.jpg, id=285, 481.8pt x 481.8pt>
+File: wineOptimal.jpg Graphic file (type jpg)
+<use wineOptimal.jpg>
+Package pdftex.def Info: wineOptimal.jpg  used on input line 436.
+(pdftex.def)             Requested size: 455.24411pt x 455.2593pt.
+<glassOptimal.jpg, id=286, 481.8pt x 481.8pt>
+File: glassOptimal.jpg Graphic file (type jpg)
+<use glassOptimal.jpg>
+Package pdftex.def Info: glassOptimal.jpg  used on input line 442.
+(pdftex.def)             Requested size: 455.24411pt x 455.2593pt.
+[25 <./wineOptimal.jpg>]
+<diabetesOptimal.jpg, id=292, 481.8pt x 481.8pt>
+File: diabetesOptimal.jpg Graphic file (type jpg)
+<use diabetesOptimal.jpg>
+Package pdftex.def Info: diabetesOptimal.jpg  used on input line 448.
+(pdftex.def)             Requested size: 455.24411pt x 455.2593pt.
+ [26 <./glassOptimal.jpg>]
+<c4_5vsBayes.PNG, id=298, 501.37312pt x 270.25969pt>
+File: c4_5vsBayes.PNG Graphic file (type png)
+<use c4_5vsBayes.PNG>
+Package pdftex.def Info: c4_5vsBayes.PNG  used on input line 469.
+(pdftex.def)             Requested size: 455.24411pt x 245.40471pt.
+ [27 <./diabetesOptimal.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 478.
+[28 <./c4_5vsBayes.PNG>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 478.
  (templatka.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 478.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 478.
 Package rerunfilecheck Info: File `templatka.out' has not changed.
-(rerunfilecheck)             Checksum: 130A026E84A7D0C0EFDB0972F553B9E8;211.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
+(rerunfilecheck)             Checksum: 29095554ED5D970965A155437E32C8C4;653.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 478.
  ) 
 Here is how much of TeX's memory you used:
- 10863 strings out of 493303
- 155547 string characters out of 3141016
- 358899 words of memory out of 3000000
- 14201 multiletter control sequences out of 15000+200000
+ 11138 strings out of 493303
+ 161450 string characters out of 3141016
+ 369832 words of memory out of 3000000
+ 14368 multiletter control sequences out of 15000+200000
  15376 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,6n,48p,504b,325s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/Programy/MiKTeX 2.9/fonts/enc/dvips/pl/plme.enc}{D:/Programy/MiKTeX 2.9/f
-onts/enc/dvips/pl/plmi.enc}{D:/Programy/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}
-{D:/Programy/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}<D:/Programy/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programy/MiKTeX 2.9/fonts/type1/publ
-ic/pl/plbx12.pfb><D:/Programy/MiKTeX 2.9/fonts/type1/public/pl/plex10.pfb><D:/P
-rogramy/MiKTeX 2.9/fonts/type1/public/pl/plmi12.pfb><D:/Programy/MiKTeX 2.9/fon
-ts/type1/public/pl/plmi8.pfb><D:/Programy/MiKTeX 2.9/fonts/type1/public/pl/plr1
-2.pfb><D:/Programy/MiKTeX 2.9/fonts/type1/public/pl/plr17.pfb><D:/Programy/MiKT
-eX 2.9/fonts/type1/public/pl/plr8.pfb><D:/Programy/MiKTeX 2.9/fonts/type1/publi
-c/pl/plsy10.pfb>
-Output written on templatka.pdf (9 pages, 826278 bytes).
+ 44i,8n,48p,590b,327s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Programy/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}<D:/Programy/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programy/MiKTeX 2.9/fonts/type1/pu
+blic/pl/plbx12.pfb><D:/Programy/MiKTeX 2.9/fonts/type1/public/pl/plr12.pfb><D:/
+Programy/MiKTeX 2.9/fonts/type1/public/pl/plr17.pfb>
+Output written on templatka.pdf (29 pages, 1372725 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 92 named destinations out of 1000 (max. 500000)
+ 346 words of extra memory for PDF output out of 10000 (max. 10000000)
 

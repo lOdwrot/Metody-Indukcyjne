@@ -3,6 +3,7 @@ require(caret)
 testCM <- 0
 
 countStats <- function(mDf) {
+  print('Counting stats')
   cm <- confusionMatrix(mDf[,'vecPredicted'] , mDf[,'vecTrue'], mode="prec_recall")
   
   
@@ -29,8 +30,8 @@ countStats <- function(mDf) {
   # count means
   if(!is.null(nrow(cm$byClass))) {
     classesNames <- unique(mDf[,'vecTrue'])
-    for(x in classesNames) {
-      occurances <- sum(mDf[,'vecTrue'] == x)
+    for(x in seq(length(classesNames))) {
+      occurances <- sum(mDf[,'vecTrue'] == classesNames[x])
       f1Vcet[[x]] = f1Vcet[[x]] * occurances * length(classesNames) / length(mDf[,'vecTrue'])
       recallVect[[x]] = f1Vcet[[x]] * occurances * length(classesNames) / length(mDf[,'vecTrue'])
       precisionVect[[x]] = f1Vcet[[x]] * occurances * length(classesNames) / length(mDf[,'vecTrue'])
