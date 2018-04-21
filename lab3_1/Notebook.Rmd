@@ -1,0 +1,44 @@
+```{r}
+source("./dataLoader.R")
+source("./statsCounter.R")
+# library(ggplot2)
+library(ggplot2)
+library(GGally)
+library(datasets)
+library(NMF)
+library(clusteval)
+library (vegan)
+
+
+# Test first data set
+
+clustersQuantity = c(2, 3, 6, 10, 15, 20, 30, 50, 75, 100)
+
+
+mDataSet <- getDataSetIris()
+mDataSetName <- 'Iris'
+mFeatureColumns = colnames(mDataSet)[colnames(mDataSet) != 'Class']
+set.seed(20)
+
+
+```
+
+```{r}
+print(mDataSetName)
+print('Kmean ')
+for(cq in clustersQuantity) {
+  kmeanCluster <- kmeans(mDataSet[mFeatureColumns], cq, nstart = 20, iter.max = 20)
+  kmeanStats <- countCluesteringStats(mDataSet, kmeanCluster$cluster)
+  
+  print(sprintf('cq# %d ## %.3f ## %.3f ## %.3f ## %.3f end#', cq, kmeanStats$purity, kmeanStats$rand, kmeanStats$dunn, kmeanStats$dbi))
+}
+
+print('Pam Stats ')
+for(cq in clustersQuantity) {
+  pamClaster <- pam(mDataSet[mFeatureColumns], cq)
+  pamStats <- countCluesteringStats(mDataSet, pamClaster$cluster)
+  
+  print(sprintf('cq# %d ## %.3f ## %.3f ## %.3f ## %.3f end#', cq, pamStats$purity, pamStats$rand, pamStats$dunn, pamStats$dbi))
+}
+```
+

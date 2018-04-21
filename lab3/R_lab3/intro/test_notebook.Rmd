@@ -1,0 +1,238 @@
+
+
+
+```{r}
+
+source("./dataLoader.R")
+source("./crossvalidationStratified.R")
+source("./crossValidationNormal.R")
+library(C50)
+
+# Test first data set
+mDataSet <- getDataSetDiabetes()
+mDataSetName <- "Diabetes"
+mFeatureColumns = colnames(mDataSet)[colnames(mDataSet) != 'Class']
+
+
+
+
+```
+
+```{r}
+# creating and drawing tree
+mTreeParams <- C5.0Control()
+cTree <- C5.0(x = mDataSet[, mFeatureColumns], y = as.factor(mDataSet$Class), control=mTreeParams)
+print(cTree)
+plot(cTree)
+```
+
+
+```{r}
+# test min cases 
+
+# vecMinCases = c(2,5,10,15,20, 50, 70, 100)
+vecMinCases = c(2, 3, 5, 10, 15, 20, 30, 50, 100)
+vecMinCasesFscore <- seq(length(vecMinCases))
+vecTreeSize <- seq(length(vecMinCases))
+for(x in seq(length(vecMinCases))){
+  mTreeParams <- C5.0Control(minCases = vecMinCases[x])
+  cTree <- C5.0(x = mDataSet[, mFeatureColumns], y = as.factor(mDataSet$Class), control=mTreeParams)
+  mResult <- stratifiedCrossC50(mDataSet, mTreeParams, 9)
+  vecMinCasesFscore[x] <- mResult["F1"] 
+  vecTreeSize[x] <- cTree$size
+}
+
+vecMinCasesFscore <- unlist(vecMinCasesFscore)
+vecTreeSize <- unlist(vecTreeSize)
+
+# visualize
+print(data.table(vecMinCases, vecMinCasesFscore))
+
+jpeg(paste(mDataSetName, "FScoreMinCases.jpg", sep =""))
+barplot(
+  vecMinCasesFscore, 
+  names.arg=vecMinCases, 
+  ylim = c(0,1),
+  ylab = "FScore",
+  xlab = "minCases",
+  main=paste("Instance", mDataSetName, sep=" ") 
+)
+dev.off()
+
+
+jpeg(paste(mDataSetName, "SizeMinCases.jpg", sep =""))
+barplot(
+  vecTreeSize, 
+  names.arg=vecMinCases, 
+  ylab = "Size",
+  xlab = "minCases",
+  main=paste("Instance", mDataSetName, sep =" ") 
+)
+dev.off()
+```
+
+
+```{r}
+# test confidence factor 
+
+vecCF = c(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9) 
+vecCFFscore <- seq(length(vecCF))
+vecTreeSize <- seq(length(vecCF))
+for(x in seq(length(vecCF))){
+  mTreeParams <- C5.0Control(CF = vecCF[x])
+  cTree <- C5.0(x = mDataSet[, mFeatureColumns], y = as.factor(mDataSet$Class), control=mTreeParams)
+  mResult <- stratifiedCrossC50(mDataSet, mTreeParams, 9)
+  vecCFFscore[x] <- mResult["F1"] 
+  vecTreeSize[x] <- cTree$size
+}
+
+vecCFFscore <- unlist(vecCFFscore)
+vecTreeSize <- unlist(vecTreeSize)
+
+# visualize
+print(data.table(vecCF, vecCFFscore))
+
+jpeg(paste(mDataSetName, "FScoreCF.jpg", sep =""))
+barplot(
+  vecCFFscore, 
+  names.arg=vecCF, 
+  ylim = c(0,1),
+  ylab = "FScore",
+  xlab = "CF",
+  main=paste("Instance", mDataSetName, sep=" ") 
+)
+dev.off()
+
+jpeg(paste(mDataSetName, "SizeCF.jpg", sep =""))
+barplot(
+  vecTreeSize, 
+  names.arg=vecCF, 
+  ylab = "Size",
+  xlab = "CF",
+  main=paste("Instance", mDataSetName, sep =" ") 
+)
+dev.off()
+```
+
+
+
+
+
+
+
+
+```{r}
+# test noGlobalPruning
+vecNoGlobalPruning = c(TRUE, FALSE) 
+vecNoGlobalPruningFscore <- seq(length(vecNoGlobalPruning))
+vecTreeSize <- seq(length(vecNoGlobalPruning))
+for(x in seq(length(vecNoGlobalPruning))){
+  mTreeParams <- C5.0Control(noGlobalPruning = vecNoGlobalPruning[x])
+  cTree <- C5.0(x = mDataSet[, mFeatureColumns], y = as.factor(mDataSet$Class), control=mTreeParams)
+  mResult <- stratifiedCrossC50(mDataSet, mTreeParams, 9)
+  vecNoGlobalPruningFscore[x] <- mResult["F1"] 
+  vecTreeSize[x] <- cTree$size
+}
+
+vecNoGlobalPruningFscore <- unlist(vecNoGlobalPruningFscore)
+vecTreeSize <- unlist(vecTreeSize)
+
+# visualize
+print(data.table(vecNoGlobalPruning, vecNoGlobalPruningFscore))
+
+jpeg(paste(mDataSetName, "FScoreNoGlobalPruning.jpg", sep =""))
+barplot(
+  vecNoGlobalPruningFscore, 
+  names.arg=c("True", "FALSE"), 
+  ylim = c(0,1),
+  ylab = "FScore",
+  xlab = "noGlobalPruning",
+  main=paste("Instance", mDataSetName, sep=" ") 
+)
+dev.off()
+
+jpeg(paste(mDataSetName, "SizeNoGlobalPruning.jpg", sep =""))
+barplot(
+  vecTreeSize, 
+  names.arg=c("True", "FALSE"), 
+  ylab = "Size",
+  xlab = "noGlobalPruning",
+  main=paste("Instance", mDataSetName, sep =" ") 
+)
+dev.off()
+```
+
+
+```{r}
+# test confidence factor 
+
+vecWinnow = c(TRUE, FALSE) 
+vecWinnowFscore <- seq(length(vecWinnow))
+vecTreeSize <- seq(length(vecWinnow))
+for(x in seq(length(vecWinnow))){
+  mTreeParams <- C5.0Control(winnow = vecWinnow[x])
+  cTree <- C5.0(x = mDataSet[, mFeatureColumns], y = as.factor(mDataSet$Class), control=mTreeParams)
+  mResult <- stratifiedCrossC50(mDataSet, mTreeParams, 9)
+  vecWinnowFscore[x] <- mResult["F1"] 
+  vecTreeSize[x] <- cTree$size
+}
+
+vecWinnowFscore <- unlist(vecWinnowFscore)
+vecTreeSize <- unlist(vecTreeSize)
+
+# visualize
+print(data.table(vecWinnow, vecWinnowFscore))
+
+jpeg(paste(mDataSetName, "FScoreWinnow.jpg", sep =""))
+barplot(
+  vecWinnowFscore, 
+  names.arg=c("True", "FALSE"), 
+  ylim = c(0,1),
+  ylab = "FScore",
+  xlab = "winnow",
+  main=paste("Instance", mDataSetName, sep=" ") 
+)
+dev.off()
+
+jpeg(paste(mDataSetName, "SizeWinnow.jpg", sep =""))
+barplot(
+  vecTreeSize, 
+  names.arg=c("True", "FALSE"), 
+  ylab = "Size",
+  xlab = "winnow",
+  main=paste("Instance", mDataSetName, sep =" ") 
+)
+dev.off()
+```
+
+```{r}
+# optimal wine params
+  mDataSet <- getDataSetGlass()
+  mTreeParams <- C5.0Control(CF = 0.1, minCases = 5, noGlobalPruning = FALSE, winnow = TRUE)
+  cTree <- C5.0(x = mDataSet[, mFeatureColumns], y = as.factor(mDataSet$Class), control=mTreeParams)
+  mResult <- stratifiedCrossC50(mDataSet, mTreeParams, 9)
+  print(mResult$F1)
+  jpeg('glassOptimal.jpg')
+  plot(cTree)
+  dev.off()
+
+```
+
+```{r}
+instances <- c('Wine', 'Diabetes', 'Glass')
+resC <- c(0.932, 0.816, 0.691)
+resB <- c(0.957, 0.748, 0.646)
+
+d <-data.frame(c5_0 = resC, bayes = resB)
+
+barplot(
+  t(as.matrix(d)), 
+  beside=TRUE, 
+  legend =c("C4.5", "Bayes"), 
+  col=c("darkblue","red"), 
+  ylim = c(0,1),
+  names.arg=instances, 
+  ylab = "FScore"
+  )
+```
+
