@@ -154,8 +154,12 @@ def testFoldX(_df, _shuffle, _stratified):
     print(countStatistics(allTargets, allPreds))
     
 
-dataSet = dataLoad.getDataSetWine()
-fullAnalise(dataSet)
+dataSet = dataLoad.getDataSetKnowlegde()
+print(dataSet)
+drawTools.drawHistDiagonal(dataSet)
+# fullAnalise(dataSet)
+
+
 
 # print('@@Wine')
 # print('##Brak randomizacji, brak stratyfikacji')

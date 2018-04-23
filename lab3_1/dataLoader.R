@@ -87,7 +87,31 @@ getDataSetDiabetes <- function() {
   data <- fread(mUrl)
   names(data) <- useNames
   
-  return(as.data.frame(data))
+  resultDF = as.data.frame(data)
+  return(range01(resultDF))
+}
+
+getDataSetKnowledge <- function() {
+  mUrl = "./dataSets/knowledge.txt"
+  useNames <- c(
+    'STG',
+    'SCG',
+    'STR',
+    'LPR',
+    'PEG',
+    'Class'
+  )
+  
+  # 1 very low
+  # 2 low
+  # 3 middle
+  # 4 high
+  
+  data <- fread(mUrl)
+  names(data) <- useNames
+  
+  resultDF = as.data.frame(data)
+  return(range01(resultDF))
 }
 
 getDataSetGlass <- function() {
@@ -114,6 +138,7 @@ getDataSetGlass <- function() {
   resultDF = as.data.frame(data)
   return(range01(resultDF))
 }
+
 
 range01 <- function(mDF) {
   mFatuerNames <- colnames(mDF)[colnames(mDF) != 'Class']

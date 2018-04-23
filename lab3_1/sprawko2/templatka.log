@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.11)  21 APR 2018 22:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.11)  23 APR 2018 21:54
 entering extended mode
 **./templatka.tex
 (templatka.tex
@@ -1023,36 +1023,109 @@ been already used, duplicate ignored
                    \relax 
 l.69 \newpage
               [1]
-<dsWineCombined.png, id=34, 1387.584pt x 691.6239pt>
+<dsWineCombined.png, id=54, 1387.584pt x 691.6239pt>
 File: dsWineCombined.png Graphic file (type png)
 <use dsWineCombined.png>
-Package pdftex.def Info: dsWineCombined.png  used on input line 79.
+Package pdftex.def Info: dsWineCombined.png  used on input line 78.
 (pdftex.def)             Requested size: 455.24411pt x 226.90688pt.
- [2 <./dsWineCombined.png>]
+<dsGlassCombined.png, id=56, 1387.584pt x 691.6239pt>
+File: dsGlassCombined.png Graphic file (type png)
+<use dsGlassCombined.png>
+Package pdftex.def Info: dsGlassCombined.png  used on input line 84.
+(pdftex.def)             Requested size: 455.24411pt x 226.90688pt.
+<dsDiabetesCombined.png, id=57, 1387.584pt x 691.6239pt>
+File: dsDiabetesCombined.png Graphic file (type png)
+<use dsDiabetesCombined.png>
+Package pdftex.def Info: dsDiabetesCombined.png  used on input line 90.
+(pdftex.def)             Requested size: 455.24411pt x 226.90688pt.
+ [2 <./dsWineCombined.png> <./dsGlassCombined.png>]
+<dsKnowledgeCombined.png, id=66, 903.375pt x 716.1957pt>
+File: dsKnowledgeCombined.png Graphic file (type png)
+<use dsKnowledgeCombined.png>
+Package pdftex.def Info: dsKnowledgeCombined.png  used on input line 96.
+(pdftex.def)             Requested size: 455.24411pt x 360.92738pt.
+ [3 <./dsDiabetesCombined.png> <./dsKnowledgeCombined.png>]
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 109.
+(Font)              <12> on input line 127.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 109.
+(Font)              <8> on input line 127.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 109.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
- (templatka.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
+(Font)              <6> on input line 127.
+ [4] [5] [6] [7]
+<diabetesClasses.PNG, id=98, 493.845pt x 302.63063pt>
+File: diabetesClasses.PNG Graphic file (type png)
+<use diabetesClasses.PNG>
+Package pdftex.def Info: diabetesClasses.PNG  used on input line 300.
+(pdftex.def)             Requested size: 455.24411pt x 278.97307pt.
+ [8]
+<diabetesK2.PNG, id=103, 489.32813pt x 307.1475pt>
+File: diabetesK2.PNG Graphic file (type png)
+<use diabetesK2.PNG>
+Package pdftex.def Info: diabetesK2.PNG  used on input line 308.
+(pdftex.def)             Requested size: 455.24411pt x 285.76138pt.
+<diabetesK5.PNG, id=104, 493.0922pt x 304.13625pt>
+File: diabetesK5.PNG Graphic file (type png)
+<use diabetesK5.PNG>
+Package pdftex.def Info: diabetesK5.PNG  used on input line 314.
+(pdftex.def)             Requested size: 455.24411pt x 280.80649pt.
+ [9 <./diabetesClasses.PNG> <./diabetesK2.PNG>]
+<diabetesK10.PNG, id=113, 490.08093pt x 305.64188pt>
+File: diabetesK10.PNG Graphic file (type png)
+<use diabetesK10.PNG>
+Package pdftex.def Info: diabetesK10.PNG  used on input line 320.
+(pdftex.def)             Requested size: 455.24411pt x 283.9222pt.
+<diabetesP2.PNG, id=114, 490.83376pt x 307.1475pt>
+File: diabetesP2.PNG Graphic file (type png)
+<use diabetesP2.PNG>
+Package pdftex.def Info: diabetesP2.PNG  used on input line 328.
+(pdftex.def)             Requested size: 455.24411pt x 284.88496pt.
+ [10 <./diabetesK5.PNG> <./diabetesK10.PNG>]
+<diabetesP5.PNG, id=123, 493.0922pt x 306.39468pt>
+File: diabetesP5.PNG Graphic file (type png)
+<use diabetesP5.PNG>
+Package pdftex.def Info: diabetesP5.PNG  used on input line 334.
+(pdftex.def)             Requested size: 455.24411pt x 282.8917pt.
+<diabetesP10.PNG, id=124, 495.35063pt x 307.90031pt>
+File: diabetesP10.PNG Graphic file (type png)
+<use diabetesP10.PNG>
+Package pdftex.def Info: diabetesP10.PNG  used on input line 340.
+(pdftex.def)             Requested size: 455.24411pt x 282.97102pt.
+ [11 <./diabetesP2.PNG> <./diabetesP5.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 345--351
+
+ []
+
+File: dsKnowledgeCombined.png Graphic file (type png)
+<use dsKnowledgeCombined.png>
+Package pdftex.def Info: dsKnowledgeCombined.png  used on input line 356.
+(pdftex.def)             Requested size: 455.24411pt x 360.92738pt.
+[12 <./diabetesP10.PNG>]
+<selectedFeaturesKnowledge.PNG, id=140, 491.58656pt x 302.63063pt>
+File: selectedFeaturesKnowledge.PNG Graphic file (type png)
+<use selectedFeaturesKnowledge.PNG>
+Package pdftex.def Info: selectedFeaturesKnowledge.PNG  used on input line 364.
+
+(pdftex.def)             Requested size: 455.24411pt x 280.26604pt.
+ [13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 386.
+ [14 <./selectedFeaturesKnowledge.PNG>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 386.
+
+(templatka.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 386.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 386.
 Package rerunfilecheck Info: File `templatka.out' has not changed.
-(rerunfilecheck)             Checksum: 5C142D68118B2581FA81DBDEFF746CF5;201.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
+(rerunfilecheck)             Checksum: 459A830B1791CCB4692F1893D9DADA36;440.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 386.
  ) 
 Here is how much of TeX's memory you used:
- 10766 strings out of 493303
- 153792 string characters out of 3141016
- 359832 words of memory out of 3000000
- 14137 multiletter control sequences out of 15000+200000
+ 10853 strings out of 493303
+ 155342 string characters out of 3141016
+ 382843 words of memory out of 3000000
+ 14185 multiletter control sequences out of 15000+200000
  14570 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,6n,48p,460b,325s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,8n,48p,460b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Programy/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{D:/Programy/MiKTeX 2.9/f
 onts/enc/dvips/pl/plms.enc}{D:/Programy/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}
 {D:/Programy/MiKTeX 2.9/fonts/enc/dvips/pl/plme.enc}<D:/Programy/MiKTeX 2.9/fon
@@ -1063,9 +1136,9 @@ ublic/pl/plr12.pfb><D:/Programy/MiKTeX 2.9/fonts/type1/public/pl/plr17.pfb><D:/
 Programy/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><D:/Programy/MiKTeX 2.9/font
 s/type1/public/pl/plsy10.pfb><D:/Programy/MiKTeX 2.9/fonts/type1/public/pl/plsy
 8.pfb>
-Output written on templatka.pdf (4 pages, 318541 bytes).
+Output written on templatka.pdf (15 pages, 1698849 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 194 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

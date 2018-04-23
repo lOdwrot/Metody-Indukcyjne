@@ -117,4 +117,31 @@ def getDataSetIris():
                     sep=",", 
                     names=useNamse)
 
+def getDataSetKnowlegde():
+    mUrl = "knowledge.txt"
+    with open(mUrl, 'r') as myfile:
+        s=myfile.read()
+   
+    realNames=[
+                'sepal length in cm',
+                'sepal width in cm',
+                'petal length in cm',
+                'petal width in cm',
+                'Class'
+            ]
+
+    useNamse = [
+                'STG',
+                'SCG',
+                'STR',
+                'LPR',
+                'PEG',
+                'Class'
+            ]
+
+
+    c=pd.read_csv(io.StringIO(s),
+                    sep=",", 
+                    names=useNamse)
+
     return c

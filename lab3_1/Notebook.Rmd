@@ -2,21 +2,23 @@
 source("./dataLoader.R")
 source("./statsCounter.R")
 # library(ggplot2)
+library(GGally)
 library(ggplot2)
 library(GGally)
 library(datasets)
 library(NMF)
 library(clusteval)
 library (vegan)
+library(plyr)
 
 
 # Test first data set
 
-clustersQuantity = c(2, 3, 6, 10, 15, 20, 30, 50, 75, 100)
+clustersQuantity = c(2, 3, 4, 6, 10, 15, 20, 30, 50, 75, 100)
 
 
-mDataSet <- getDataSetIris()
-mDataSetName <- 'Iris'
+mDataSet <- getDataSetKnowledge()
+mDataSetName <- 'Wine'
 mFeatureColumns = colnames(mDataSet)[colnames(mDataSet) != 'Class']
 set.seed(20)
 
@@ -40,5 +42,42 @@ for(cq in clustersQuantity) {
   
   print(sprintf('cq# %d ## %.3f ## %.3f ## %.3f ## %.3f end#', cq, pamStats$purity, pamStats$rand, pamStats$dunn, pamStats$dbi))
 }
+```
+
+```{r}
+ mDataSet <- getDataSetKnowledge()
+mDataSet['Class'] <- sapply(mDataSet['Class'], as.character)
+ggpairs(mDataSet, aes(color = Class))
+```
+
+
+```{r}
+
+  mDataSet <- getDataSetKnowledge()
+  mDataSetName <- 'Diabetes'
+  mFeatureColumns = colnames(mDataSet)[colnames(mDataSet) != 'Class']
+  kmeanCluster <- kmeans(mDataSet[mFeatureColumns], 10, nstart = 20, iter.max = 20)
+  mDataSet['Class'] <- kmeanCluster$cluster
+  mDataSet['Class'] <- sapply(mDataSet['Class'], as.character)
+  names(mDataSet)[names(mDataSet)=="Class"] <- "Claster"
+  ggpairs(mDataSet, aes(color = Claster))
+
+
+```
+
+
+```{r}
+
+  mDataSet <- getDataSetKnowledge()
+  pamClaster <- pam(mDataSet[c('PEG', 'LPR')], 12)
+  pamStats <- countCluesteringStats(mDataSet[c('PEG', 'LPR', 'Class')], pamClaster$cluster)
+  
+  mDataSet['Class'] <- pamClaster$cluster
+  mDataSet['Class'] <- sapply(mDataSet['Class'], as.character)
+  names(mDataSet)[names(mDataSet)=="Class"] <- "Claster"
+  ggpairs(mDataSet, aes(color = Claster))
+
+  print(sprintf('cq# %d ## %.3f ## %.3f ## %.3f ## %.3f end#', cq, pamStats$purity, pamStats$rand, pamStats$dunn, pamStats$dbi))
+  
 ```
 

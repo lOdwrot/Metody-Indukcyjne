@@ -1,4 +1,8 @@
 \contentsline {section}{\numberline {1}Wst\IeC {\k e}p}{2}{section.1}
 \contentsline {section}{\numberline {2}Badane zbiory}{2}{section.2}
-\contentsline {section}{\numberline {3}Metody klasteryzacji}{2}{section.3}
-\contentsline {section}{\numberline {4}Ocena klasteryzacji}{3}{section.4}
+\contentsline {section}{\numberline {3}Metody klasteryzacji}{4}{section.3}
+\contentsline {section}{\numberline {4}Ocena klasteryzacji}{4}{section.4}
+\contentsline {section}{\numberline {5}Klasteryzacja zbior\IeC {\'o}w}{5}{section.5}
+\contentsline {section}{\numberline {6}Wizualizacja klasteryzacji}{8}{section.6}
+\contentsline {section}{\numberline {7}Analiza zbioru data knowledge modeling}{12}{section.7}
+\contentsline {section}{\numberline {8}Wnioski}{14}{section.8}
