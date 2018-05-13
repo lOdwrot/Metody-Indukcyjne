@@ -1,7 +1,9 @@
 import io
 import requests
 import pandas as pd
+from sklearn import preprocessing
 
+min_max_scaler = preprocessing.MinMaxScaler()
 diabetesDataPath = './dataSets/diabetes/data.txt'   
 
 def getDataSetWine():
@@ -44,6 +46,8 @@ def getDataSetWine():
                     sep=",", 
                     names=useNamse)
 
+    featureVals = [x for x in c if x != 'Class']
+    c[featureVals] = c[featureVals].apply(lambda x: (x - x.min()) / (x.max() - x.min()))
     return c
 
 def getDataSetGlass():
@@ -68,6 +72,8 @@ def getDataSetGlass():
                     sep=",", 
                     names=useNamse)
     del c['index']
+    featureVals = [x for x in c if x != 'Class']
+    c[featureVals] = c[featureVals].apply(lambda x: (x - x.min()) / (x.max() - x.min()))
     return c
 
 def getDataSetDiabetes():
@@ -89,6 +95,8 @@ def getDataSetDiabetes():
     c=pd.read_csv(io.StringIO(s.decode('utf-8')),
                     sep=",", 
                     names=useNamse)
+    featureVals = [x for x in c if x != 'Class']
+    c[featureVals] = c[featureVals].apply(lambda x: (x - x.min()) / (x.max() - x.min()))
     return c
 
 
@@ -112,10 +120,13 @@ def getDataSetIris():
                 'Class'
             ]
 
-
     c=pd.read_csv(io.StringIO(s.decode('utf-8')),
                     sep=",", 
                     names=useNamse)
+    
+    featureVals = [x for x in c if x != 'Class']
+    c[featureVals] = c[featureVals].apply(lambda x: (x - x.min()) / (x.max() - x.min()))
+    return c
 
 def getDataSetKnowlegde():
     mUrl = "knowledge.txt"
@@ -136,4 +147,6 @@ def getDataSetKnowlegde():
                     sep=",", 
                     names=useNamse)
 
+    featureVals = [x for x in c if x != 'Class']
+    c[featureVals] = c[featureVals].apply(lambda x: (x - x.min()) / (x.max() - x.min()))
     return c
