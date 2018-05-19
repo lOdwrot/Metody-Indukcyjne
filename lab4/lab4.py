@@ -34,12 +34,12 @@ def countStatistics(_y_true, _y_pred):
     return accracy, precision, recall, fscore
 
 
-mDataSet = dataLoad.getDataSetGlass()
+mDataSet = dataLoad.getDataSetWine()
 allTargets, allPreds = crossValidation.normal(mDataSet, 5, 5, MANHATAN, DISTANCE)
 accuracy, precision, recall, fscore = countStatistics(allTargets, allPreds)
 print(fscore)
 
-
+# drawTools.drawHistDiagonal(mDataSet)
 # for x in [2,3,4,5,7,10,15,20,50]:
 #     allTargets, allPreds = crossValidation.normal(mDataSet, 5, x, MANHATAN, UNIFORM)
 #     accuracy, precision, recall, fscore = countStatistics(allTargets, allPreds)

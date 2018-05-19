@@ -49,7 +49,7 @@
 \titleformat*{\section}{\normalsize\bfseries}
 \titleformat*{\subsection}{\footnotesize\bfseries}
 \titleformat*{\subsubsection}{\normalsize}
-\title{Wybrane metody klasteryzacji w oparciu o system R}
+\title{KNN}
 \date{24.04.2018}
 \author{Łukasz Odwrot 218283}
 
@@ -112,6 +112,8 @@ Klasteryzacja badana będzie na 4 zbiorach.
 \caption{Rozkład cech dla zbioru Knowledge}
 \end{figure}
 
+\section{Normalizacja}
+Wartości dla wszystkich zbiorów zostały znormalizowane, aby uniknąć przewagi jednego z atrybutów nad innymi. W przypadku instancji wine bez normalizacji wynik fscore wynosi 0.752, a w przypadku normalizacji danych wyniki wzrósł do 0.972.
 
 \section{Wpływ doboru metryki na wyniki}
 
@@ -425,5 +427,5 @@ Diabetes & 0.748 & 0.816 & 0.608 \\
 \end{figure}
 
 \section{Wnioski}
-To do..
+Mimo relatywnie prostego działania algorytm knn, daje dobre wyniki. Dla zbioru otrzymane wyniki są nawet lepsze niż dla pozostałych zbiorów. Dla dużych zbiorów dość szybko wzrasta czas potrzebny na selekcję najbliższych sąsiadów.
 \end{document}
