@@ -220,17 +220,20 @@ dev.off()
 
 ```{r}
 instances <- c('Wine', 'Diabetes', 'Glass')
-resC <- c(0.932, 0.816, 0.691)
+resA <- c(0.932, 0.816, 0.691)
 resB <- c(0.957, 0.748, 0.646)
 resC <- c(0.972, 0.690, 0.608)
+resBaging <- c(0.966, 0.643, 0.671)
+resBoost <- c(0.922, 0.6, 0.291)
+resRandomForest <-c(0.949, 0.631, 0.689)
 
-d <-data.frame(c5_0 = resC, bayes = resB, Knn=resC)
+d <-data.frame(c5_0 = resA, bayes = resB, Knn=resC, Baging = resBaging, Boosting = resBoost, RandomForest = resRandomForest)
 
 barplot(
   t(as.matrix(d)), 
   beside=TRUE, 
-  legend =c("C4.5", "Bayes", "Knn"), 
-  col=c("darkblue","red", "green"), 
+  legend =c("C4.5", "Bayes", "Knn", 'Baging', 'Boosting', 'RandomForest'),
+  col=c("darkblue","red", "green", "yellow", 'black', 'white'), 
   ylim = c(0,1),
   names.arg=instances, 
   ylab = "FScore"

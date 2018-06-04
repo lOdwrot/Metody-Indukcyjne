@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Opis algorytm\IeC {\'o}w}{2}{section.1}
+\contentsline {section}{\numberline {2}Opis badanych parametr\IeC {\'o}w}{3}{section.2}
+\contentsline {section}{\numberline {3}Badania metody bagging}{4}{section.3}
+\contentsline {section}{\numberline {4}Badania metody ADA-Boosting}{6}{section.4}
+\contentsline {section}{\numberline {5}Badania metody Random Forest}{7}{section.5}
+\contentsline {section}{\numberline {6}Optymalne warto\IeC {\'s}ci parametr\IeC {\'o}w dla zbior\IeC {\'o}w i por\IeC {\'o}wnania}{8}{section.6}
+\contentsline {section}{\numberline {7}Wnioski}{10}{section.7}
