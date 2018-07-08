@@ -73,7 +73,7 @@ Zespoły klasyfikatorów wykorzystują wiele modeli decyzyjnych używających te
 
 \begin{figure}[H]
 \centering
-\includegraphics{choseWorks.png}
+\includegraphics[scale=0.6]{choseWorks.png}
 \caption{Losowanie przykładów uczących dla metod baging i boosting}
 \end{figure}
 
@@ -82,7 +82,7 @@ Ponadto w przypadku metody \textit{bagging} głos każdego z klasyfikatorów lic
 
 \begin{figure}[H]
 \centering
-\includegraphics{choseWorks.png}
+\includegraphics[scale=0.6]{choseWorks.png}
 \caption{Przypisywanie wag modelom składowym}
 \end{figure}
 Zewnętrzne źródła podają, że użycie boostingu może w przypadku słabych klasyfikatorów dać bardzo dobre wyniki, a w przypadku boostingu prościej jest zapobiegać przeuczeniu poszczególnych modeli.\\
@@ -240,7 +240,6 @@ SAMME.R & 0.916 & 0.922 & 0.916 & 0.915\\
 \hline
 \end{tabular}
 
-.\\
 \begin{tabular}{ |p{3cm}||p{2cm}|p{2cm}|p{2cm}|p{2cm}| }
 \hline
 \multicolumn{5}{|c|}{glass}\\
@@ -270,7 +269,6 @@ SAMME & 0.379 & 0.442 & 0.379 & 0.395\\
 SAMME.R & 0.584 & 0.627 & 0.584 & 0.575\\
 \hline
 \end{tabular}
-\\
 
 \begin{tabular}{ |p{3cm}||p{2cm}|p{2cm}|p{2cm}|p{2cm}| }
 \hline
@@ -301,7 +299,7 @@ SAMME & 0.760 & 0.688 & 0.575 & 0.626\\
 SAMME.R & 0.533 & 0.390 & 0.604 & 0.474\\
 \hline
 \end{tabular}
-\\
+
 \section{Badania metody Random Forest}
 
 \begin{tabular}{ |p{3cm}||p{2cm}|p{2cm}|p{2cm}|p{2cm}| }
@@ -335,8 +333,7 @@ max\_depth & Accuracy & Precision & Recall & FScore \\
 8.00 & 0.966 & 0.966 & 0.966 & 0.966\\
 \hline
 \end{tabular}
-\\
-\\.
+.\\
 \begin{tabular}{ |p{3cm}||p{2cm}|p{2cm}|p{2cm}|p{2cm}| }
 \hline
 \multicolumn{5}{|c|}{glass}\\
@@ -368,8 +365,7 @@ max\_depth & Accuracy & Precision & Recall & FScore \\
 8.00 & 0.682 & 0.685 & 0.682 & 0.679\\
 \hline
 \end{tabular}
-\\
-\\.
+.\\
 \begin{tabular}{ |p{3cm}||p{2cm}|p{2cm}|p{2cm}|p{2cm}| }
 \hline
 \multicolumn{5}{|c|}{diabetes}\\
@@ -401,7 +397,7 @@ max\_depth & Accuracy & Precision & Recall & FScore \\
 8.00 & 0.747 & 0.661 & 0.567 & 0.610\\
 \hline
 \end{tabular}
-\\
+.\\
 
 \section{Optymalne wartości parametrów dla zbiorów i porównania}
 Dla każdego zestawu danych i każdej metody wybrane zostały wyznaczone optymalne wartości parametrów. \\Dla metody bagging wartości parametrów kolejno: n\_estimators, max\_samples, max\_features
